@@ -13,7 +13,7 @@
     "SubHeading": {
       "type": "string"
     },
-    "Link": {
+    "Links": {
       "type": "component",
       "repeatable": true,
       "component": "elements.link"

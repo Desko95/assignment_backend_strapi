@@ -13,11 +13,13 @@ export interface BlocksCardCarousel extends Struct.ComponentSchema {
 export interface BlocksHeading extends Struct.ComponentSchema {
   collectionName: 'components_blocks_headings';
   info: {
+    description: '';
     displayName: 'Heading';
   };
   attributes: {
     heading: Schema.Attribute.String;
     linkId: Schema.Attribute.String;
+    Links: Schema.Attribute.Component<'elements.link', true>;
     subHeading: Schema.Attribute.String;
     text: Schema.Attribute.Text;
   };
@@ -46,7 +48,7 @@ export interface BlocksSection extends Struct.ComponentSchema {
   };
   attributes: {
     Heading: Schema.Attribute.String;
-    Link: Schema.Attribute.Component<'elements.link', true>;
+    Links: Schema.Attribute.Component<'elements.link', true>;
     SubHeading: Schema.Attribute.String;
   };
 }
